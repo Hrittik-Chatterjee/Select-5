@@ -52,8 +52,7 @@ function addToSelectedFive(element){
     fivePlayerListArray.push(playerName)
     const perPlayerPrice =document.getElementById('per-player-price').innerText
     document.getElementById('player-expenses').innerText= fivePlayerListArray.length * perPlayerPrice
-    element.disabled=true
-    
+    element.disabled=true   
 }
 
 
@@ -79,5 +78,8 @@ selectedPlayerList('locatelli-select','locatelli-name')
 
 
 function totalCalulation(){
-    document.getElementById
-}
+    const manager= document.getElementById('manager-price').innerText
+    const coach = document.getElementById('coach-price').innerText
+    document.getElementById('sub-total-amount')=coach+manager
+ 
+ }
