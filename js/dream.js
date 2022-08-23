@@ -52,7 +52,10 @@ function addToSelectedFive(element){
     fivePlayerListArray.push(playerName)
     const perPlayerPrice =document.getElementById('per-player-price').innerText
     document.getElementById('player-expenses').innerText= fivePlayerListArray.length * perPlayerPrice
-    element.disabled=true   
+    element.disabled=true
+    if(fivePlayerListArray.length>5){
+        alert('you can only select 5 players')
+    }   
 }
 
 
