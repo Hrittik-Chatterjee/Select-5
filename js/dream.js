@@ -77,9 +77,14 @@ selectedPlayerList('bremer-select','bremer-name'),
 selectedPlayerList('locatelli-select','locatelli-name')
 
 
-function totalCalulation(){
-    const manager= document.getElementById('manager-price').innerText
-    const coach = document.getElementById('coach-price').innerText
-    document.getElementById('sub-total-amount')=coach+manager
- 
- }
+document.getElementById("calculate-total-button").addEventListener('click',function(){
+    const coachInt=document.getElementById('coach-price').innerText
+    const coach =parseInt(coachInt)
+    const managerInt=document.getElementById('manager-price').innerText
+    const manager=parseInt(managerInt)
+    const playerInt =document.getElementById('player-expenses').innerText
+    const player=parseInt(playerInt)
+
+    document.getElementById('sub-total-amount').innerText=  coach + manager +player
+
+})
