@@ -16,77 +16,103 @@
     </header>   
     <section>  
         <div class="grid grid-cols-4 mx-12 mb-4">
+            <!-- player1 -->
             <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
                 <img class="inline" src="images/image4.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Manuel Locatelli</h5>
+                <div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="locatelli-name">Manuel Locatelli</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">6 Goals | 14 Assists</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="locatelli-select" onclick="addToSelectedFive(this)">Select</button>
+                </div>
              </div>
+                <!-- player2 -->
              <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
                 <img class="inline" src="images/bonucci.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Leonardo Bonucci</h5>
+                <div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="bonucci-name">Leonardo Bonucci</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">19 Cleansheets | 44 Headers won</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="bonucci-select" onclick="addToSelectedFive(this)">Select</button>
+                </div>
              </div>
+                <!-- player3 -->
              <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
                 <img class="inline" src="images/Screenshot_1.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Denis Zakaria</h5>
+                <div>
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="zakaria-name">Denis Zakaria</h5>
                 <p class="font-normal text-gray-700 dark:text-gray-400">4 Goals | 11 Assists</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="zakaria-select" onclick="addToSelectedFive(this)">Select</button>
+                </div>
              </div>
+             <!-- selected five -->
              <div class="p-2 max-w-sm bg-gray-900 rounded-lg text-white mx-4">
                 <h1 class="text-2xl text-center">Selected V</h1>
-                <ul class="mt-4 ">
-                    <li class="mt-7">1</li>
-                    <li class="mt-7">2</li>
-                    <li class="mt-7">3</li>
-                    <li class="mt-7">4</li>
-                    <li class="mt-7">5</li>
+                <div id="selected-players-list">
+                <ul class="mt-4" id="ulofplayers">
                 </ul>
+            </div>
              </div>
         </div>
 
         <div class="grid grid-cols-4 mx-12">
+            <!-- player4 -->
             <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
-                <img class="inline" src="images/image11.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Angel Di Maria</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">11 Goals | 27 Assists</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                    <img class="inline" src="images/image11.jpg" alt="">
+                    <div>
+                      <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="dimaria-name">Angel Di Maria</h5>
+                      <p class="font-normal text-gray-700 dark:text-gray-400">11 Goals | 27 Assists</p>
+                      <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="dimaria-select" onclick="addToSelectedFive(this)">Select</button>
+                      </div>
              </div>
+            <!-- player5 -->
              <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
-                <img class="inline" src="images/image2.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Dusan Vlahovic</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">32 Goals | 7 Assists</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                <div>
+                    <img class="inline" src="images/image2.jpg" alt="">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="vlahovic-name">Dusan Vlahovic</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">32 Goals | 7 Assists</p>
+                        <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="vlahovic-select" onclick="addToSelectedFive(this)">Select</button>
+                    </div>
+                </div>
              </div>
+            <!-- player6 -->
              <div class="py-4 max-w-sm bg-neutral-900 rounded-lg  text-center mx-4">
-                <img class="inline" src="images/image3.jpg" alt="">
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Gleison Bremer</h5>
-                <p class="font-normal text-gray-700 dark:text-gray-400">21 Cleansheets | 54 Headers won</p>
-                <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold">Select</button>
+                <div>
+                    <img class="inline" src="images/image3.jpg" alt="">
+                    <div>
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white" id="bremer-name">Gleison Bremer</h5>
+                        <p class="font-normal text-gray-700 dark:text-gray-400">21 Cleansheets | 54 Headers won</p>
+                        <button class="w-9/12 bg-white text-black rounded-lg p-2 mt-2 font-bold disabled:text-white disabled:bg-neutral-500" id="bremer-select" onclick="addToSelectedFive(this)">Select</button>
+                    </div>
+                </div>
              </div>
 
-
+             <!-- Calculate -->
              <div class="py-4 max-w-sm bg-gray-900 rounded-lg mx-4 text-white">
                 <div>
                     <h1 class="text-2xl text-center mb-6">Budget</h1>
                     <div class="pl-8 mt-4 mb-6">
-                        <p>Per Player<span class="box border border-white pr-12 py-2 mx-7 text-md ml-11"> 1000</span></p>
+                        <p>Per Player<span class="box border border-white pr-12 py-2 mx-7 text-md ml-11" id="per-player-price"> 1000</span></p>
                     </div>
                     <button class="w-9/12 bg-white text-black  p-2 mt-2 font-bold mx-8 ">Calculate</button>
                 </div>
+
+
+
                 <div>
                     <div>
                         <div class="space-x-12 flex inline mt-6">
-                            <h1 class="pl-8">Player Expences</h1><h1 class="text-sky-300">$</span >5000</span></h1>
+                            <p class="pl-8">Player Expenses<span class="text-sky-300 ml-8" id="player-expenses">0</span></p>
                         </div>
+
                         <div class="pl-8 mt-4 mb-6 space-x-11">
-                            <span>Manager  </span> <span class="box border border-white pl-2 pr-12 py-2 mx-7 text-md ml-12"> 2000</span>
+                            <span >Manager  </span> <span class="box border border-white pl-2 pr-12 py-2 mx-7 text-md ml-12" id="manager-price"> 2000</span>
                         </div>
+
                         <div class="pl-8 mt-4 mb-6 space-x-16">
-                            <span>Coach</span> <span class="box border border-white pr-12 py-2 pl-2 mx-7 text-md ml-12"> 4000</span>
+                            <span id>Coach</span> <span class="box border border-white pr-12 py-2 pl-2 mx-7 text-md ml-12" id="coach-price"> 4000</span>
                         </div>
-                        <button class="w-9/12 bg-white text-black  p-2 mt-2 font-bold mx-8 ">Calculate Total</button>
+
+                        <button class="w-9/12 bg-white text-black  p-2 mt-2 font-bold mx-8 " onclick="totalCalculation()">Calculate Total</button>
                         <div class="space-x-32 flex inline mt-6">
                             <h1 class="pl-8">Total </h1><h1 class="text-amber-700">$</span >11000</span></h1>
                         </div>
@@ -99,5 +125,7 @@
     <footer class="text-center bg-black p-12 text-white mt-8">
         <span>Copyright @2022 All Rights Reserved.</span>
     </footer>
+
+    <script src="js/dream.js"></script>
 </body>
 </html>
